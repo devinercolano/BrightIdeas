@@ -1,0 +1,19 @@
+@model Belt.Models.IdeaFormViewModel
+
+<a href="/Logout">Log Out</a>
+
+<form asp-action="CreateIdea" asp-controller="Idea" method="post">
+    <label>Post an Idea: </label><input asp-for="IdeaText" type="text">
+    <input type="submit" value="Idea">
+</form>
+@foreach(var idea in @ViewBag.AllIdeas){
+    <div>
+        <p>@idea.User.FirstName says:<p>
+        <p>@idea.IdeaText</p>
+        <form action="Like" method="post"><input type="submit" value="Like"><input type="hidden" name="hiddenIdeaId" value="@idea.IdeaId"></form>
+        <p><form action="Idea/@idea.IdeaId" method="post"><input type="submit" value="view">@idea.Likes.Count</form><p>
+        @if(@idea.UserId == @ViewBag.UserId){
+            <td><form action="Delete" method="post"><input type="hidden" name="hiddenIDeaId" value="@idea.IdeaId"><input type="submit" value="x"></form></td>
+        }
+    </div>
+}

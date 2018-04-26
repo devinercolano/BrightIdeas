@@ -1,0 +1,41 @@
+<style>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+</style>
+
+<a href="/BrightIdeas">Bright Ideas</a>
+<a href="/Logout">Log out</a>
+
+    <div>
+        <p>@ViewBag.Idea.User.FirstName says:<p>
+        <p>@ViewBag.Idea.IdeaText</p>
+    </div>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>Full Name</th>
+  </tr>
+@{
+    if(@ViewBag.likeData != null){
+        @foreach(var liker in @ViewBag.likeData){
+            <tr>
+                <td><form action="/User/@liker.User.UserId" method="post"> <input type="hidden" ="hiddenUserId" value="@liker.User.UserId">@liker.User.FirstName<input type="submit" value="View"></form></td>
+                <td><form action="/User/@liker.User.UserId" method="post"> <input type="hidden" ="hiddenUserId" value="@liker.User.UserId">@liker.User.FirstName @liker.User.LastName <input type="submit" value="View"></form></td>
+            </tr>
+        }
+    }  
+}

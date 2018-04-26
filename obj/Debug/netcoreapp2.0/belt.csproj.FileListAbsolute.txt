@@ -1,0 +1,10 @@
+/Users/incito/Desktop/DojoAssignments/netCore/belt/bin/Debug/netcoreapp2.0/belt.deps.json
+/Users/incito/Desktop/DojoAssignments/netCore/belt/bin/Debug/netcoreapp2.0/belt.runtimeconfig.json
+/Users/incito/Desktop/DojoAssignments/netCore/belt/bin/Debug/netcoreapp2.0/belt.runtimeconfig.dev.json
+/Users/incito/Desktop/DojoAssignments/netCore/belt/bin/Debug/netcoreapp2.0/belt.dll
+/Users/incito/Desktop/DojoAssignments/netCore/belt/bin/Debug/netcoreapp2.0/belt.pdb
+/Users/incito/Desktop/DojoAssignments/netCore/belt/obj/Debug/netcoreapp2.0/belt.csproj.CoreCompileInputs.cache
+/Users/incito/Desktop/DojoAssignments/netCore/belt/obj/Debug/netcoreapp2.0/belt.AssemblyInfoInputs.cache
+/Users/incito/Desktop/DojoAssignments/netCore/belt/obj/Debug/netcoreapp2.0/belt.AssemblyInfo.cs
+/Users/incito/Desktop/DojoAssignments/netCore/belt/obj/Debug/netcoreapp2.0/belt.dll
+/Users/incito/Desktop/DojoAssignments/netCore/belt/obj/Debug/netcoreapp2.0/belt.pdb
